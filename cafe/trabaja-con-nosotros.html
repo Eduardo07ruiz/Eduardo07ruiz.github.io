@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <img src="img/cerrar.png" alt="cerrar" class="cerrar" onclick="location.href='index.html';">
+    <div class="form-container">
+        <h1>Trabaja Con Nosotros</h1>
+        <form id="loginForm" action="/procesarFormulario" method="post">
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo-documento">Tipo de Documento</label>
+                <select id="tipo-documento" name="tipo-documento" required>
+                    <option value="" disabled selected>Seleccione</option>
+                    <option value="cedula">Cédula</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="cedula-extranjera">Cédula de Identificación Extranjera</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero-documento">Número de Documento</label>
+                <input type="text" id="numero-documento" name="numero-documento" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" id="loginFormy">Enviar</button>
+            <script src="js.js"></script>
+        </form>
+    </div>
+</body>
+</html>

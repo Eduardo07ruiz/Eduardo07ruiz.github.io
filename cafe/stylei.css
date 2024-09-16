@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(12, 32%, 22%);
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.email-container {
+    max-width: 600px;
+    width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative; /* Necesario para que el .cerrar esté posicionado en relación con este contenedor */
+}
+
+.email-header {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.email-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.email-footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Estilo del botón de cerrar como imagen */
+.cerrar {
+    position: absolute;
+    top: 10px; /* Ajusta la posición desde el borde superior del contenedor */
+    right: 10px; /* Ajusta la posición desde el borde derecho del contenedor */
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    height: 30px; /* Ajusta el tamaño de la imagen */
+    background: url('ruta/a/tu-imagen.png') no-repeat center center; /* Usa la ruta a tu imagen */
+    background-size: contain; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor */
+    border: none; /* Elimina el borde si es un botón */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+
+/* Consultas de medios para pantallas pequeñas */
+@media (max-width: 768px) {
+    .email-container {
+        width: 95%; /* Ajusta el ancho para pantallas pequeñas */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .email-header, .email-body, .email-footer {
+        padding: 15px; /* Ajusta el padding dentro de los elementos */
+    }
+
+    .cerrar {
+        top: 10px; /* Ajusta la posición para pantallas más pequeñas */
+        right: 10px; /* Ajusta la posición para pantallas más pequeñas */
+        width: 25px; /* Ajusta el tamaño para pantallas más pequeñas */
+        height: 25px; /* Ajusta el tamaño para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .email-container {
+        width: 95%; /* Ajusta el ancho para pantallas más pequeñas */
+        padding: 5px; /* Reduce el padding para pantallas más pequeñas */
+    }
+
+    .email-header, .email-body, .email-footer {
+        padding: 10px; /* Ajusta el padding para pantallas muy pequeñas */
+    }
+
+    .cerrar {
+        top: 5px; /* Ajusta aún más para pantallas muy pequeñas */
+        right: 5px; /* Ajusta aún más para pantallas muy pequeñas */
+        width: 20px; /* Ajusta el tamaño para pantallas muy pequeñas */
+        height: 20px; /* Ajusta el tamaño para pantallas muy pequeñas */
+    }
+}
