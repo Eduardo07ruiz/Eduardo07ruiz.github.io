@@ -1,0 +1,267 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+/*========== Imagen de fondo ==========*/
+.fondo {
+    background-image: url('../imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa toda la ventana */
+}
+
+
+/*========== Logo ==========*/
+.DivLogo {
+    background-color: #a77242;
+    width: 295px;
+    height: 90px;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    border-radius: 35px;
+    opacity: 0.9;
+}
+.Logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 30px;
+    left: 155px;
+}
+.TituloLogo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 51px;
+    left: 300px;
+    font-size: 27px;
+    cursor: default;
+}
+
+
+/*========== Texto de iniciar sesión ==========*/
+.DivTexto {
+    background-color: #a77242;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    width: 390px;
+    height: 200px;
+    opacity: 0.9;
+    border-radius: 35px;
+}
+.TituloTexto {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 235px;
+    left: 170px;
+    font-size: 50px;
+    cursor: default;
+}
+
+.LinkIniciaSesion {
+    font-family: 'Montserrat', sans-serif;
+    color: #f0c023;
+    text-decoration: none;
+    position: absolute;
+    top: 405px;
+    left: 170px;
+    font-size: 17px;
+}
+.LinkIniciaSesion:hover {
+    color: rgb(255, 251, 0); /* Color al pasar el cursor (opcional) */
+}
+.BotonAyuda {
+    background-color: #dfb324;
+    position: absolute;
+    top: 500px;
+    left: 360px;
+    border: 2px solid #dfb324;
+    border-radius: 200px;
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*========== Formulario de inicio de sesión ==========*/
+.formulario {
+    background-color: #a77242;
+    width: 430px;
+    height: 570px;
+    position: absolute;
+    top: 110px;
+    left: 855px;
+    border-radius: 35px;
+    opacity: 0.9;
+}
+.TituloFormulario {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 110px;
+    left: 975px;
+    cursor: default;
+}
+
+.LabelNombres {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 215px;
+    left: 925px;
+    cursor: text;
+}
+.LabelApellidos {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 310px;
+    left: 925px;
+    cursor: text;
+}
+.LabelEmail {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 405px;
+    left: 925px;
+    cursor: text;
+}
+.LabelPassword {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 500px;
+    left: 925px;
+    cursor: text;
+}
+.InputNombres {
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 17px;
+    top: 235px;
+    left: 908px;
+    width: 310px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 200px;
+    outline: none;
+    padding-left: 15px;
+}
+.InputApellidos {
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 17px;
+    top: 330px;
+    left: 908px;
+    width: 310px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 200px;
+    outline: none;
+    padding-left: 15px;    
+}
+.InputEmail {
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 17px;
+    top: 425px;
+    left: 908px;
+    width: 310px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 200px;
+    outline: none;
+    padding-left: 15px;
+}
+.InputPassword {
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 17px;
+    top: 520px;
+    left: 908px;
+    width: 310px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 200px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.InputNombres:focus,
+.InputApellidos:focus,
+.InputEmail:focus,
+.InputPassword:focus,
+.SubmitRegistro:focus,
+.BotonAyuda:focus {
+    border-color: #dfb324;
+    box-shadow: 0 0 5px #dfb324;
+}
+
+.InputNombres:hover,
+.InputApellidos:hover,
+.InputEmail:hover,
+.InputPassword:hover,
+.SubmitRegistro:hover,
+.BotonAyuda:hover {
+    border-color: #dfb324;
+    box-shadow: 0 0 5px #dfb324;
+}
+
+
+.SubmitRegistro {
+    background-color: #dfb324;
+    position: absolute;
+    top: 600px;
+    left: 995px;
+    border: 2px solid #dfb324;
+    border-radius: 200px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/*========== Móvil ==========*/
+@media (max-width: 767px) {
+    .fondo {
+        height: 100vh; /* Mantener la altura completa */
+    }
+
+}
+
+
+/*========== Tablet ==========*/
+@media (min-width: 768px) and (max-width: 990px) {
+    .fondo {
+        height: 100vh; /* Mantener la altura completa */
+    }
+
+}
+
+
+/*========== Computadoras ==========*/
+@media (min-width: 991px) {
+    .fondo {
+        height: 100vh; /* Mantener la altura completa */
+    }
+}

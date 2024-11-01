@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="shortcut icon" href="imagenes/user-fill.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/></head>
+
+<body>
+    <!--======Contenedores======-->
+    <div class="fondo"></div>
+    <div class="formulario"></div>
+    <div class="DivLogo"></div>
+    <div class="DivTexto"></div>
+
+    <!--======Logo======-->
+    <img src="imagenes/Logo-Photoroom-2.png" alt="logo" class="Logo">
+    <h1 class="TituloLogo">BEAUTY<br>SALOON</h1>
+
+    <!--======Texto de iniciar sesión======-->
+    <h1 class="TituloTexto">Acceso</h1>
+    <h2 class="ParrafoTexto"><strong>Inicia sesión para<br>continuar.</strong></h2>
+    <a href="Registrate.html" class="LinkRegistrate">¿Aún no estás registrado? ¡Regístrate!</a>
+    <button type="button" class="BotonAyuda">¿Necesitas ayuda?</button>
+
+    <!--======Formulario======-->
+    <h1 class="TituloFormulario">INICIAR SESIÓN</h1>
+    <form action="IniciarSesion.html" method="post">
+        <label for="Email" class="LabelEmail">EMAIL</label>
+        <input type="email" name="Email" id="Email" class="InputEmail" required autofocus>
+        <label for="Password" class="LabelPassword">CONTRASEÑA</label>
+        <input type="password" name="Password" id="Password" class="InputPassword" required>
+        <span class="toggle-password" id="togglePassword"><i class="ri-lock-unlock-line"></i></span>
+        <input type="submit" value="Iniciar sesión" class="SubmitSesion">
+    </form>
+
+    <!--======Js para ver y ocultar contraseña======-->
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('Password');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            togglePassword.innerHTML = type === 'password' 
+                ? '<i class="ri-lock-unlock-line"></i>' 
+                : '<i class="ri-lock-password-line"></i>';
+        });
+    </script>
+</body>
+</html>

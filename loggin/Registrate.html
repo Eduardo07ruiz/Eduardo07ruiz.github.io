@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="shortcut icon" href="imagenes/user-fill.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/></head>
+
+<body>
+    <!--======Contenedores======-->
+    <div class="fondo"></div>
+    <div class="formulario"></div>
+    <div class="DivLogo"></div>
+    <div class="DivTexto"></div>
+
+    <!--======Logo======-->
+    <img src="imagenes/Logo-Photoroom-2.png" alt="logo" class="Logo">
+    <h1 class="TituloLogo">BEAUTY<br>SALOON</h1>
+
+    <!--======Texto de crear cuenta======-->
+    <h1 class="TituloTexto">Crea Una<br>cuenta nueva</h1>
+    <a href="IniciarSesion.html" class="LinkIniciaSesion">¿Ya estás registrado? Inicia sesión</a>
+    <button type="button" class="BotonAyuda">¿Necesitas ayuda?</button>
+
+    <!--======Formulario======-->
+    <h1 class="TituloFormulario">¡Regístrate!</h1>
+    <form action="IniciarSesion.html" method="post">
+        <label for="Nombres" class="LabelNombres">NOMBRES</label>
+        <input type="text" name="Nombres" id="Nombres" class="InputNombres" required autofocus>
+        <label for="Apellidos" class="LabelApellidos">APELLIDOS</label>
+        <input type="text" name="Apellidos" id="Apellidos" class="InputApellidos" required>
+        <label for="Email" class="LabelEmail">EMAIL</label>
+        <input type="email" name="Email" id="Email" class="InputEmail" required>
+        <label for="Password" class="LabelPassword">CONTRASEÑA</label>
+        <input type="text" name="Password" id="Password" class="InputPassword">
+        in
+        <input type="submit" value="Registrarme" class="SubmitRegistro">
+    </form>
+
+</body>
+</html>
