@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectAfterDelay() {
+            setTimeout(function() {
+                window.location.href = 'empleados.html';
+            }, 1500); // 3000 milisegundos = 3 segundos
+        }
+    </script>
+</head>
+<body>
+    <label for="user">Usuarios</label>
+    <input type="checkbox" role="switch" class="toggle" onclick="setTimeout(function() { location.href='usuarios.php'; }, 1500);"/>
+    <label for="employees">Empleados</label>
+    <input type="checkbox" role="switch" class="toggle" style="--angle: -45deg" onclick="setTimeout(function() { location.href='empleados.php'; }, 1500);"/>
+    <label for="customers">Clientes</label>
+    <input type="checkbox" role="switch" class="toggle" style="--angle: 0deg" onclick="setTimeout(function() { location.href='clientes.php'; }, 1500);"/>
+    <label for="products">Productos</label>
+    <input type="checkbox" role="switch" class="toggle" style="--angle: 90deg" onclick="setTimeout(function() { location.href='productos.php'; }, 1500);"/>
+    <label for="categories">Categorias</label>
+    <input type="checkbox" role="switch" class="toggle" onclick="setTimeout(function() { location.href='categorias.php'; }, 1500);"/>
+</body>
+</html>
