@@ -1,0 +1,135 @@
+body {
+    background: aquamarine;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, aquamarine, aqua);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, aquamarine, aqua); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    width: 400px;
+    height: 300px;
+    top: 190px;
+    left: 500px;
+    border-radius: 30px;
+    border: 2px solid gray;
+}
+
+.title {
+    position: absolute;
+    left: 83px;
+    width: 500px;
+}
+.input {
+    position: absolute;
+    top: 90px;
+}
+.ced {
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    width: 300px;
+    height: 20px;
+    outline: none;
+}
+.ced:focus {
+    border-color: aqua;
+    box-shadow: 0 0 5px aqua;
+}
+.nom {
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    width: 327px;
+    height: 20px;
+    outline: none;
+}
+.nom:focus {
+    border-color: aqua;
+    box-shadow: 0 0 5px aqua;
+}
+.ape {
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    width: 300px;
+    height: 20px;
+    outline: none;
+}
+.ape:focus {
+    border-color: aqua;
+    box-shadow: 0 0 5px aqua;
+}
+.dir {
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    width: 335px;
+    height: 20px;
+    outline: none;
+}
+.dir:focus {
+    border-color: aqua;
+    box-shadow: 0 0 5px aqua;
+}
+
+.ins{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    width: 65px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 180px;
+    left: 15px;
+}
+.Con{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    width: 65px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 180px;
+    left: 90px;
+}
+.edi{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    width: 65px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 180px;
+    left: 165px;
+}
+.eli{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    width: 65px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 180px;
+    left: 240px;
+}
+.sal{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    width: 65px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 180px;
+    left: 315px;
+}
+.ins:focus,
+.Con:focus,
+.edi:focus,
+.eli:focus,
+.sal:focus
+{
+    background-color: aqua;
+}
