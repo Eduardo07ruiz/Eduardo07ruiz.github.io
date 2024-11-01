@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ADD8E6;
+}
+div {
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+}
