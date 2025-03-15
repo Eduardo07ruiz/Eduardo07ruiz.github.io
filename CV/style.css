@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+  padding: 15px;
+  z-index: 99;
+}
+.contenedor-logo {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  color: white;
+  cursor: pointer;
+}
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+
+.item a {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+}
+.item.selected a {
+  background: radial-gradient(circle, #4e31aa, #3a1078);
+  color: white;
+}
+.item i {
+  font-size: 12px;
+}
+.item a:hover {
+  background: gray;
+  background-color: rgba(178, 178, 183, 0.2);
+}
+
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+
+section {
+  display: none;
+}
+section:target {
+  display: block;
+}
+
+.contenedor-principal {
+  display: flex;
+  height: 49.09rem;
+}
+.relleno {
+  width: 17rem;
+  height: auto;
+}
+.contenedor-text {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  justify-content: center;
+}
+.titulo-text {
+  color: white;
+}
+.contenedor-img {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.foto-perfil {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.contenedor-btn {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.descargar-pdf {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.pdf-sena, .pdf-curriculum {
+  width: 73rem;
+  height: 50rem;
+}
+.contacto {
+  display: flex;
+  width: 100%;
+  height: 32rem;
+  flex-direction: column;
+}
+.relleno-social {
+  height: 50rem;
+}
+.contenedor-social {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+.contenedor-item {
+  display: flex;
+  background-color: black;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.ri-github-fill {
+  color: white;
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+.ri-whatsapp-fill {
+  color: #25D366;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.gmail-icon {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.container a {
+  display: flex;
+}
+a:hover {
+  transform: scale(1.1);
+}
